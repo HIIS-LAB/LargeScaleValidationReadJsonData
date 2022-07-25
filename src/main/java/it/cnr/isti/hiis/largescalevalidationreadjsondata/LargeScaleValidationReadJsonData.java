@@ -26,7 +26,7 @@ public class LargeScaleValidationReadJsonData {
             for(MongoEvalData _evalData : evalDataList) {
                 System.out.println("IpaCode ".concat(_evalData.getIpaCode()));                                
             }
-            File pageEvalFile = new File("docs\\page_eval_2022-07-25-12-48.json");
+            File pageEvalFile = new File("docs\\page_eval_2022-07-25-14-45.json");
             List<MongoEvalPageResult> pageEvalList = mapper.readValue(pageEvalFile, 
                     mapper.getTypeFactory().constructCollectionType(List.class, MongoEvalPageResult.class));
             for(MongoEvalPageResult res : pageEvalList) {
